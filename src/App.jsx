@@ -3,6 +3,8 @@ import './App.css';
 import { GifComponent } from './components/GifComponent';
 import { InputField } from './components/InputField';
 import { ShowPrize } from './components/ShowPrize';
+import { FaGithub } from "react-icons/fa6";
+
 
 function App() {
   const [count, setCount] = useState(0);
@@ -25,6 +27,7 @@ function App() {
   return (
     <div className=''>
       <p className='text-3xl md:text-5xl text-center font-Poetsen text-[#AD8B73] heading'>Most Accurate Dahej Calculator</p>
+      <a className='flex items-center justify-center underline' href="https://github.com/saurav-tiwari03/Dahej-Calculator"><FaGithub />@saurav-tiwari03</a>
       <InputField setData={countHandler} />
       <div className='flex items-center justify-center mt-4'>
         {count >= 3 && <GifComponent/>}
