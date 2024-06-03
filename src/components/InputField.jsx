@@ -75,7 +75,7 @@ export const InputField = ({ setData }) => {
   };
 
   return (
-    <div className="flex items-center justify-center mt-12">
+    <div className="flex items-center justify-center mt-4">
       <div className="flex flex-col justify-center items-center p-12 border-2 border-[#AD8B73] bg-[#ddb8a0] card w-[500px] h-[400px]">
         <div className="flex items-center justify-center outline-none w-[250px] rounded-xl mb-2 pl-2 border-2 border-black input1 font-semibold focus:w-[275px] transition-all ease-in-out duration-300" type="text" placeholder="Tu kya krta h">
           <button className={`border-2 rounded-3xl p-1 ${role === 'SE' ? 'bg-white' : ''}`} onClick={() => setRole('SE')}>Software Engineer</button>
